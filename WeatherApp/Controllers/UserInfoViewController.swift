@@ -145,10 +145,6 @@ class UserInfoViewController: UIViewController {
             DispatchQueue.main.async {
                 if changedDevice.success == true {
                     self.showQueryResultAllert(allertText: "Имя устройства успешно изменено")
-//                    self.tableView.reloadData()
-//                    let token = String((changedDevice.data?.tokenDevice)!)
-//                    print(token)
-//                    self.currentUserDevices[]
                 } else if changedDevice.success == false {
                     self.showQueryResultAllert(allertText: (changedDevice.error?.message)!)
                 }
