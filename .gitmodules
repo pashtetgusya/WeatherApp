@@ -1,0 +1,3 @@
+[submodule "WeatherApp/Submodules/Charts"]
+	path = WeatherApp/Submodules/Charts
+	url = https://github.com/danielgindi/Charts

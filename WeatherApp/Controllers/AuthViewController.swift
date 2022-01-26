@@ -8,13 +8,27 @@
 import Foundation
 import UIKit
 
-class AuthViewController: UIViewController {
+class AuthViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var username: UITextField!
     @IBOutlet var password: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.username.delegate = self
+        self.password.delegate = self
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first as? UITouch {
+            view.endEditing(true)
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.switchBasedNextTextField(textField)
+        return true
     }
     
     @IBAction func authUser() {
@@ -55,6 +69,16 @@ class AuthViewController: UIViewController {
         self.present(registrationWindowViewController, animated: true, completion: nil)
     }
     
+    private func switchBasedNextTextField(_ textFiled: UITextField) {
+        switch textFiled {
+        case self.username:
+            self.password.becomeFirstResponder()
+        default:
+            self.password.resignFirstResponder()
+            self.authUser()
+        }
+    }
+    
     private func showAuthErrorAllert(allertText: String) {
         let allertController = UIAlertController(
             title: "Ошибка авторизации",
@@ -91,4 +115,5 @@ class AuthViewController: UIViewController {
         allertController.addAction(actionOK)
         present(allertController, animated: true, completion: nil)
     }
+    
 }

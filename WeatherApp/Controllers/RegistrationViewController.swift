@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var username: UITextField!
     @IBOutlet var name: UITextField!
@@ -19,6 +19,24 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.username.delegate = self
+        self.name.delegate = self
+        self.surname.delegate = self
+        self.patronymic.delegate = self
+        self.firstPassword.delegate = self
+        self.secondPassword.delegate = self
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first as? UITouch {
+            view.endEditing(true)
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.switchBasedNextTextField(textField)
+        return true
     }
     
     @IBAction func registerNewUser() {
@@ -62,6 +80,24 @@ class RegistrationViewController: UIViewController {
     
     @IBAction func cancel() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    private func switchBasedNextTextField(_ textField: UITextField) {
+        switch textField {
+        case self.surname:
+            self.name.becomeFirstResponder()
+        case self.name:
+            self.patronymic.becomeFirstResponder()
+        case self.patronymic:
+            self.username.becomeFirstResponder()
+        case self.username:
+            self.firstPassword.becomeFirstResponder()
+        case self.firstPassword:
+            self.secondPassword.becomeFirstResponder()
+        default:
+            self.secondPassword.resignFirstResponder()
+            self.registerNewUser()
+        }
     }
     
     private func showAuthViewController() {

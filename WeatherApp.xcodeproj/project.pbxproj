@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5333E6C27A1112400D88A82 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E5333E6B27A1112400D88A82 /* Charts */; };
 		E56B7C342743D36900DC749C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B7C332743D36900DC749C /* AppDelegate.swift */; };
 		E56B7C362743D36900DC749C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B7C352743D36900DC749C /* SceneDelegate.swift */; };
 		E56B7C382743D36900DC749C /* MainWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B7C372743D36900DC749C /* MainWindowViewController.swift */; };
@@ -20,8 +21,6 @@
 		E573161D276F9335006BBDD0 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573161C276F9335006BBDD0 /* UserInfo.swift */; };
 		E573161F276F936F006BBDD0 /* DayWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E573161E276F936F006BBDD0 /* DayWeather.swift */; };
 		E5731622276F9384006BBDD0 /* WeekMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5731621276F9384006BBDD0 /* WeekMetrics.swift */; };
-		E573163D27704D74006BBDD0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E573163927704D25006BBDD0 /* Charts.framework */; platformFilter = ios; };
-		E573163E27704D74006BBDD0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E573163927704D25006BBDD0 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E57316412770A4D3006BBDD0 /* ChartsSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57316402770A4D3006BBDD0 /* ChartsSettings.swift */; };
 		E57316442770DCCD006BBDD0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57316432770DCCD006BBDD0 /* StringExtension.swift */; };
 		E57316462770FB25006BBDD0 /* CreateDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57316452770FB25006BBDD0 /* CreateDevice.swift */; };
@@ -36,38 +35,8 @@
 		E5986D3927565F1400E02AB5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5986D3827565F1400E02AB5 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E573163827704D25006BBDD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E573163327704D25006BBDD0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
-			remoteInfo = Charts;
-		};
-		E573163A27704D25006BBDD0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E573163327704D25006BBDD0 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
-			remoteInfo = ChartsTests;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E573163F27704D74006BBDD0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E573163E27704D74006BBDD0 /* Charts.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		E5333E6927A1110200D88A82 /* Charts */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Charts; sourceTree = "<group>"; };
 		E56B7C302743D36900DC749C /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56B7C332743D36900DC749C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E56B7C352743D36900DC749C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +52,6 @@
 		E573161C276F9335006BBDD0 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		E573161E276F936F006BBDD0 /* DayWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeather.swift; sourceTree = "<group>"; };
 		E5731621276F9384006BBDD0 /* WeekMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekMetrics.swift; sourceTree = "<group>"; };
-		E573163327704D25006BBDD0 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		E57316402770A4D3006BBDD0 /* ChartsSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsSettings.swift; sourceTree = "<group>"; };
 		E57316432770DCCD006BBDD0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E57316452770FB25006BBDD0 /* CreateDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDevice.swift; sourceTree = "<group>"; };
@@ -103,20 +71,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E573163D27704D74006BBDD0 /* Charts.framework in Frameworks */,
+				E5333E6C27A1112400D88A82 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5333E6A27A1112400D88A82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E55E658F27A10FFB00565EFE /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				E5333E6927A1110200D88A82 /* Charts */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
 		E56B7C272743D36900DC749C = {
 			isa = PBXGroup;
 			children = (
-				E573163327704D25006BBDD0 /* Charts.xcodeproj */,
 				E56B7C322743D36900DC749C /* WeatherApp */,
 				E56B7C312743D36900DC749C /* Products */,
-				E573163C27704D74006BBDD0 /* Frameworks */,
+				E5333E6A27A1112400D88A82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +113,7 @@
 		E56B7C322743D36900DC749C /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				E55E658F27A10FFB00565EFE /* Submodules */,
 				E57316422770DCB9006BBDD0 /* Extension */,
 				E56B7C4A2743D3FE00DC749C /* Resources */,
 				E56B7C4F2743F40C00DC749C /* API */,
@@ -224,22 +207,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E573163427704D25006BBDD0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E573163927704D25006BBDD0 /* Charts.framework */,
-				E573163B27704D25006BBDD0 /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E573163C27704D74006BBDD0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E57316422770DCB9006BBDD0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,13 +226,15 @@
 				E56B7C2C2743D36900DC749C /* Sources */,
 				E56B7C2D2743D36900DC749C /* Frameworks */,
 				E56B7C2E2743D36900DC749C /* Resources */,
-				E573163F27704D74006BBDD0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+				E5333E6B27A1112400D88A82 /* Charts */,
+			);
 			productName = WeatherApp;
 			productReference = E56B7C302743D36900DC749C /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -296,35 +265,12 @@
 			mainGroup = E56B7C272743D36900DC749C;
 			productRefGroup = E56B7C312743D36900DC749C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E573163427704D25006BBDD0 /* Products */;
-					ProjectRef = E573163327704D25006BBDD0 /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E56B7C2F2743D36900DC749C /* WeatherApp */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E573163927704D25006BBDD0 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = E573163827704D25006BBDD0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E573163B27704D25006BBDD0 /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = E573163A27704D25006BBDD0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E56B7C2E2743D36900DC749C /* Resources */ = {
@@ -585,6 +531,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5333E6B27A1112400D88A82 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E56B7C282743D36900DC749C /* Project object */;
 }
